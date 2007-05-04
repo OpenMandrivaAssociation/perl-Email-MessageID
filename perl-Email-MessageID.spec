@@ -1,6 +1,6 @@
 %define module  Email-MessageID
 %define name    perl-%{module}
-%define version 1.35
+%define version 1.351
 %define release %mkrel 1
 
 Name:           %{name}
