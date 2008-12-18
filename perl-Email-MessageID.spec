@@ -1,7 +1,7 @@
 %define module  Email-MessageID
 %define name    perl-%{module}
-%define version 1.351
-%define release %mkrel 3
+%define version 1.400
+%define release %mkrel 1
 
 Name:           %{name}
 Version:        %{version}
@@ -10,10 +10,7 @@ Summary:        Generate world unique message-ids
 License:        GPL or Artistic
 Group:          Development/Perl
 URL:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/Email/%{module}-%{version}.tar.bz2
-%if %{mdkversion} < 1010
-BuildRequires:  perl-devel
-%endif
+Source:         http://www.cpan.org/modules/by-module/Email/%{module}-%{version}.tar.gz
 BuildRequires:  perl-Email-Address
 BuildArch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}
