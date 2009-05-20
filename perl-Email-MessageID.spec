@@ -2,7 +2,7 @@
 %define name    perl-%{module}
 %define up_version 1.401
 %define version %perl_convert_version %{up_version}
-%define release %mkrel 1
+%define release %mkrel 2
 
 Name:           %{name}
 Version:        %{version}
@@ -13,6 +13,7 @@ Group:          Development/Perl
 URL:            http://search.cpan.org/dist/%{module}
 Source:         http://www.cpan.org/modules/by-module/Email/%{module}-%{up_version}.tar.gz
 BuildRequires:  perl(Email::Address)
+Requires:       perl(Email::Address)
 BuildArch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}
 
