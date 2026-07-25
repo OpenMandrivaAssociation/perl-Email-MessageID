@@ -1,16 +1,16 @@
 %define upstream_name    Email-MessageID
-%define upstream_version 1.405
+%define upstream_version 1.408
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Generate world unique message-ids
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Email/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/rjbs/Email-MessageID
+Source0:	https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Email-MessageID-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
