@@ -1,16 +1,14 @@
 %define upstream_name    Email-MessageID
-%define upstream_version 1.408
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.408
+Release:	2
 
 Summary:	Generate world unique message-ids
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/rjbs/Email-MessageID
-Source0:	https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Email-MessageID-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Email-MessageID-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -25,7 +23,7 @@ Message-ids are optional, but highly recommended, headers that identify a
 message uniquely. This software generates a unique message-id.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
